@@ -1,0 +1,89 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #333;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 50px;
+    padding-left: 100px;
+    color: #f1f1f1;
+    text-align: center;
+}
+nav {
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    background: rgb(83,83,83);
+    border: 1px solid #333;
+}
+.items {
+    height: 130px;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.items:nth-child(1) {
+    height: 100px;
+}
+.icone {
+    width: 30px;
+}
+.txt-liste {
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* sous liste */
+
+.sous-liste {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    left: 99px;
+    background: rgb(37,37,37);
+    list-style-type: none;
+    padding: 20px;
+    border-left: 10px solid #222;
+    border-right: 10px solid #222;
+    color: #f1f1f1;
+    display: none;
+}
+.titre-sous-liste {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.t1 {
+    color: violet;
+}
+.t2 {
+    color: lightblue;
+}
+.t3 {
+    color: lightseagreen;
+}
+.t4 {
+    color: antiquewhite;
+}
+.t5 {
+    color: orangered;
+}
+.liste-items {
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.items:hover > ul {
+    display: block;
+}
